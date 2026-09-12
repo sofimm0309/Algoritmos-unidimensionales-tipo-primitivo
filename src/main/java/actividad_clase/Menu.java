@@ -40,12 +40,17 @@ public class Menu {
                     ClaseNivel1.algoritmo2();
                     break;
                 case 2:
+                    JOptionPane.showMessageDialog(null, "Algoritmo 5");
+                    ClaseNivel2.algoritmo5();
                     break;
                 case 3:
+                    
                     break;
                 case 4:
+                    
                     break;
                 case 5:
+                    
                     break;
                 case 6:
                     JOptionPane.showMessageDialog(null, "Saliendo del menú...");

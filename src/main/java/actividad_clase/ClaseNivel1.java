@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class ClaseNivel1 {
 
-    //------------------Algoritmos Sofía
+    //---------------------------Algoritmos Sofía---------------------------------
     //-----Algoritmo 1
     public static void algoritmo1() {
         //variables
