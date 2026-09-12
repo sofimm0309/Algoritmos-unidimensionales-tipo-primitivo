@@ -45,7 +45,6 @@ public class Menu {
                 case 6:
                    JOptionPane.showMessageDialog(null, "Saliendo del menú...");
                     System.exit(0);
-
                 default:
                    JOptionPane.showMessageDialog(null, "Opción inválida");
 
