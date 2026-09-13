@@ -30,7 +30,44 @@ public class ClaseNivel2 {
         //mostrar el promedio finalString.format
 
         JOptionPane.showMessageDialog(null,
-                String.format("El promedio general es: %.2f" + promedio));
+                String.format("El promedio general es: %.2f", promedio));
+    }
+
+    public static void algoritmo6() {
+        // Variables
+        boolean[] asistencia = new boolean[20]; // true = asistió, false = faltó
+        int asistieron = 0;
+        int faltaron = 0;
+        double porcentaje;
+        int i;
+
+        // Datos: ingresar asistencia (1 = asistió, 0 = faltó)
+        for (i = 0; i < asistencia.length; i++) {
+            int valor = Integer.parseInt(
+                    JOptionPane.showInputDialog("Ingrese 1 si asistió, 0 si faltó (persona " + (i + 1) + "):")
+            );
+
+            asistencia[i] = (valor == 1);
+
+        }
+
+        // Conteo
+        for (i = 0; i < asistencia.length; i++) {
+            if (asistencia[i]) {
+                asistieron++;
+            } else {
+                faltaron++;
+            }
+        }
+        // Calcular porcentaje de asistencia
+        porcentaje = (asistieron * 100.0) / asistencia.length;
+
+        // Mostrar resultados
+        JOptionPane.showMessageDialog(null,
+                "Asistieron: " + asistieron
+                + "\nFaltaron: " + faltaron
+                + "\nPorcentaje de asistencia: " + String.format("%.2f", porcentaje) + "%");
+
     }
 
 }
